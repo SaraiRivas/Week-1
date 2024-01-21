@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    </link>
+    <title>Week 1</title>
+</head>
+
+<body class="body">
+
+    <form class="form" onsubmit="return submitForm()">
+        <h1 class="form_title">Registration</h1>
+
+        <div class="form_field">
+            <label for="name" class="form_label">Complete name:</label>
+            <input type="text" id="name" class="form_input" placeholder="Name" autocomplete="off">
+        </div><br>
+
+        <div class="form_field">
+            <label for="email" class="form_label">Email:</label>
+            <input type="email" id="email" class="form_input" placeholder="name@mail.com" autocomplete="off">
+        </div><br>
+
+        <div class="form_field">
+            <label for="password" class="form_label">password:</label>
+            <input type="password" id="password" class="form_input" placeholder="Password" autocomplete="off">
+        </div><br>
+
+        <div class="form_field">
+            <label for="confirmPassword" class="form_label">Confirm password:</label>
+            <input type="password" id="confirmPassword" class="form_input" placeholder="Confirm password"
+                autocomplete="off">
+        </div><br>
+
+        <div class="form_field">
+            <label for="telephone" class="form_label">Telephone:</label>
+            <input type="tel" id="telephone" class="form_input" placeholder="1234-5678" autocomplete="off">
+        </div><br>
+
+        <div class="form_field">
+            <label for="age" class="form_label">Age:</label>
+            <input type="number" id="age" class="form_input" placeholder="Age" autocomplete="off">
+        </div><br>
+
+        <div class="form_field">
+            <label for="web" class="form_label">Web page:</label>
+            <input type="url" id="web" class="form_input" placeholder="https://web.com" autocomplete="off">
+        </div><br>
+
+        <div class="form_field">
+            <label for="experience" class="form_label">Experience of level: (beginner, intermediate,
+                advanced)</label>
+            <input type="range" class="range" name="range" min="1" max="3" list="list-range" id="experience">
+            <datalist id="list-range">
+                <option value="1" label="Beginner">
+                <option value="2" label="intermediate">
+                <option value="3" label="advanced">
+            </datalist>
+        </div><br>
+
+        <div class="form_field">
+            <input type="checkbox" id="conditions" class="form_checkbox">
+            <label for="conditions" class="form_label">I accept the terms and conditions</label>
+        </div><br>
+
+
+        <button class="button" onclick="submitForm()">Submit</button>
+    </form>
+    <script src="/javascript/main.js""></script>
+</body>
+
+</html>
